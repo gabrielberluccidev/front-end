@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*border: 1px solid red;*/
+}
+
+body {
+  font-size: 15px;
+  font-family: "Outline", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(212, 45%, 89%);
+}
+
+.container {
+  max-width: 370px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 14px;
+}
+
+.card {
+  background: hsl(0, 0%, 100%);
+  padding: 18px;
+  border-radius: 16px;
+  text-align: center;
+  margin: 0 1em;
+}
+
+.text {
+  padding: 18px 8px;
+}
+
+.text h2 {
+  color: hsl(218, 44%, 22%);
+  margin-bottom: 16px;
+  font-size: 22px;
+}
+
+.text p {
+  color: hsl(220, 15%, 55%);
+}
