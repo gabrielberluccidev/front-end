@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white-color: hsl(0, 0%, 100%);
+  --grey-color: hsl(0, 0%, 20%);
+  --dark-grey-color: hsl(0, 0%, 12%);
+  --off-black-color: hsl(0, 0%, 8%);
+  --green-color: hsl(75, 94%, 57%);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--off-black-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 400px;
+  height: 600px;
+  background: var(--dark-grey-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 12px;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  border-radius: 50%;
+}
+
+.profile h2 {
+  color: var(--white-color);
+  padding-top: 32px;
+  padding-bottom: 8px;
+}
+
+.profile p {
+  color: var(--green-color);
+  padding-bottom: 32px;
+  font-weight: 500;
+}
+
+p {
+  color: var(--white-color);
+  padding-bottom: 24px;
+  font-size: 14px;
+}
+
+.link-card {
+  padding: 12px;
+  background: var(--grey-color);
+  min-width: 300px;
+  margin-bottom: 16px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.link-card:hover {
+  background: var(--green-color);
+}
+
+.link-card:hover a {
+  color: var(--grey-color);
+}
