@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0);
+
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavander: hsl(241, 100%, 89%);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Hanken Grotesk", sans-serif;
+  min-height: 100vh;
+}
+
+.card {
+  display: flex;
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 500px;
+}
+
+.result-ball,
+.result-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.result-card {
+  background: linear-gradient(#6040fd, #4332f0);
+  border-radius: 22px;
+  width: 50%;
+  text-align: center;
+}
+
+.result-card h2,
+h3,
+h4,
+p {
+  color: var(--pale-blue);
+}
+
+.result-card h4,
+.summary h4 {
+  margin: 24px;
+}
+
+.result-card p {
+  font-size: 12px;
+  padding: 0px 22px;
+  margin-bottom: 24px;
+}
+
+.result-card h3 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.result-card p {
+  margin-bottom: 24px;
+}
+
+.summary {
+  width: 50%;
+  box-shadow: 2px 0px 10px #eaf0fc;
+  border-radius: 0px 22px 22px 0px;
+}
+
+.result-ball {
+  height: 120px;
+  width: 120px;
+  background: linear-gradient(#4a24cf, #4633ed);
+  border-radius: 50%;
+}
+
+.result-ball h1 {
+  color: var(--white);
+  font-size: 46px;
+  font-weight: 900;
+}
+
+.result-ball span {
+  color: var(--pale-blue);
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+.summary-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  width: 180px;
+}
+
+ul li {
+  margin-bottom: 8px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: start;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.summary h4 {
+  color: #3c3d52;
+}
+
+.reaction {
+  background: #fff6f5;
+  color: #c27778;
+}
+
+.memory {
+  background: #fffbf2;
+  color: #e5ca6b;
+}
+
+.verbal {
+  background: #f2fafa;
+  color: #76c6b7;
+}
+
+.visual {
+  background: #f3f3fd;
+  color: #474bbb;
+}
+
+.info {
+  color: #5d606e;
+  font-size: 12px;
+}
+
+.icon {
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.align {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  background: #303b59;
+  color: var(--white);
+  padding: 12px;
+  border: none;
+  border-radius: 24px;
+  width: 80%;
+  margin-bottom: 24px;
+  margin-top: 24px;
+  font-weight: bold;
+  font-size: 12px;
+}
